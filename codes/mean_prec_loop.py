@@ -1,0 +1,37 @@
+import numpy as np
+import xarray as xr
+from matplotlib import pyplot as plt
+import time
+
+def getPrecp(tt,case,dataDir):
+  print("\tCalculating timestep %03d"%tt)
+  fname=f'{dataDir}/archive/{case}.C.Surface-{tt:06}.nc'
+  sprec=xr.open_dataset(fname).sprec.values[0]*3600 # unit: mm/hr
+  return tt,sprec[sprec>=0.1].mean()
+
+if __name__ == "__main__":
+  case='tpe_20100802_at001'
+  dataDir='/data2/VVM/taiwanvvm_summer/'+case
+  nt=145
+  print('caseName=%s'%case)
+
+  tStart=time.time()
+  print('Calculating %d timesteps using loop...'%nt)
+
+  meanPrec=[]
+  #for tt in tmList:
+  for tt in range(nt):
+    tt,prec=getPrecp(tt,case,dataDir)
+    meanPrec.append(prec)
+
+  plt.close()
+  plt.plot(np.arange(nt)/6.0,meanPrec)
+  plt.xlim(0,24)
+  plt.xlabel('Local Hour')
+  plt.ylabel('Mean Precipitation (mm/hr)')
+  plt.grid()
+
+  tEnd=time.time()
+  print('Calculating %d timesteps using loop...It costed %f sec'%(nt,tEnd-tStart))
+
+  
