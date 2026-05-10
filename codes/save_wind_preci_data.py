@@ -26,7 +26,8 @@ if __name__ == "__main__":
 
   pool=multiprocessing.Pool(nProc)
   #for all the runs
-  caseList=[a.split('/')[-1] for a in glob.glob('/data2/VVM/taiwanvvm_summer/*_20*')]
+  #caseList=[a.split('/')[-1] for a in glob.glob('/data2/VVM/taiwanvvm_summer/*_20*')]
+  caseList=[a.split('/')[-1] for a in glob.glob('/data3/VVM/taiwanvvm_summer_ats/*_20*')]
   #caseList=['tpe_20080715_at006']
   sfcList=[a.split('/')[-1].split('.')[0] for a in glob.glob('../data/*.sfc.npy')]
   #sfcList=[]
@@ -35,7 +36,8 @@ if __name__ == "__main__":
       print(f'skip {c}')
       continue
     else:
-      dataDir='/data2/VVM/taiwanvvm_summer/'+c
+      #dataDir='/data2/VVM/taiwanvvm_summer/'+c
+      dataDir='/data3/VVM/taiwanvvm_summer_ats/'+c
       nt=vvm.getNT(dataDir)
       print(c,nt)
       if nt<145:
