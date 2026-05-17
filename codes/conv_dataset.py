@@ -15,7 +15,8 @@ def conv_SFC_Field(npyfile,hr):
   wgt=wgt/wgt.sum()
 
   sfcData=np.load(npyfile)
-  final=convolve1d(sfcData,wgt,axis=0,mode='constant',cval=0.0)
+  #final=convolve1d(sfcData,wgt,axis=0,mode='constant',cval=0.0)
+  final=convolve1d(sfcData,wgt,axis=0,mode='wrap')
   np.save(f'../data/ae_data/{c}.conv.{hr}hr.npy',final)
   return c,hr
 
@@ -33,7 +34,7 @@ if __name__ == "__main__":
   #caseList=['tpe_20080715_at006']
 
   #skip calcualted cases
-  convCaseList=[a.split('/')[-1].split('.')[0] for a in glob.glob('../data/ae_data/*conv.1hr.npy')]
+  convCaseList=[a.split('/')[-1].split('.')[0] for a in glob.glob('../data/ae_data/*conv.9hr.npy')]
   convCaseList=[]
 
   tasks=[]
@@ -46,7 +47,7 @@ if __name__ == "__main__":
       print('convolve case:',f.split('/')[-1].split('.')[0])
       ncase=ncase+1
       #for hr in [1,2,3,6]:
-      for hr in [4,5]:
+      for hr in [1,2,3,4,5,6,9,12,18,24]:
         tasks.append((f,hr))
 
   tStart=time.time()

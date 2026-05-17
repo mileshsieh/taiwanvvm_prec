@@ -438,6 +438,38 @@ def calcThetaV(th,qv,zc):
   thetaV=th*(1+0.61*qv)
   return zc,thetaV
 
+
+def get3DWind_intp(dataDir,case,tp,utp,vtp,tt):
+  topo=tp.copy()
+  utopo=utp.copy()
+  vtopo=vtp.copy()
+  utopo[utopo<1.0]=1.0
+  vtopo[vtopo<1.0]=1.0
+  topo[topo<1.0]=1.0
+  idx_topo=topo.astype(int)
+  idx_utopo=utopo.astype(int)
+  idx_vtopo=vtopo.astype(int)
+  ny,nx=utopo.shape
+  x2d,y2d=np.meshgrid(np.arange(nx),np.arange(ny))
+  result=np.zeros((ny,nx))
+  uData=getData(dataDir,case,'u',tt)
+  for k in range(idx_utopo.max()+1):
+    uData[k,:,:]=np.where(idx_utopo>k,np.nan,uData[k,:,:])
+  uData=np.nanmean([uData,np.roll(uData,1,axis=2)],axis=0)
+
+  vData=getData(dataDir,case,'v',tt)
+  for k in range(idx_vtopo.max()+1):
+    vData[k,:,:]=np.where(idx_vtopo>k,np.nan,vData[k,:,:])
+  vData=np.nanmean([vData,np.roll(vData,1,axis=1)],axis=0)
+
+  #fill nan to 0.0 for valleys with only one grid spacing
+  for k in range(idx_topo.max()+1):
+    uData[k,:,:]=np.where(idx_topo>k,uData[k,:,:],np.where(np.isnan(uData[k,:,:]),0.0,uData[k,:,:]))
+    vData[k,:,:]=np.where(idx_topo>k,vData[k,:,:],np.where(np.isnan(vData[k,:,:]),0.0,vData[k,:,:]))
+
+  return uData,vData
+
+
 def getSfcWind_intp(dataDir,case,tp,utp,vtp,tt):
   topo=tp.copy()
   utopo=utp.copy()
@@ -454,15 +486,17 @@ def getSfcWind_intp(dataDir,case,tp,utp,vtp,tt):
   uData=getData(dataDir,case,'u',tt)
   for k in range(idx_utopo.max()+1):
     uData[k,:,:]=np.where(idx_utopo>k,np.nan,uData[k,:,:])
-  uData=np.nanmean([uData,np.roll(uData,-1,axis=2)],axis=0)
+  uData=np.nanmean([uData,np.roll(uData,1,axis=2)],axis=0)
 
   vData=getData(dataDir,case,'v',tt)
   for k in range(idx_vtopo.max()+1):
     vData[k,:,:]=np.where(idx_vtopo>k,np.nan,vData[k,:,:])
-  vData=np.nanmean([vData,np.roll(vData,-1,axis=1)],axis=0)
+  vData=np.nanmean([vData,np.roll(vData,1,axis=1)],axis=0)
 
-  usfc=uData[idx_utopo,y2d,x2d]
-  vsfc=vData[idx_vtopo,y2d,x2d]
+  usfc=uData[idx_topo,y2d,x2d]
+  vsfc=vData[idx_topo,y2d,x2d]
+  usfc[np.isnan(usfc)]=0.0
+  vsfc[np.isnan(vsfc)]=0.0
   return usfc,vsfc
 
 def getVarSfcOnTime(dataDir,case,var,topo,tt):
