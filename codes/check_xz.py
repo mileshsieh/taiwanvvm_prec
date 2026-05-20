@@ -396,24 +396,42 @@ if __name__=='__main__':
     v3D=vvm.getData(dataDir,case,'v',tt)
     w3D=vvm.getData(dataDir,case,'w',tt)
     qv3D=vvm.getData(dataDir,case,'qv',tt)*1000.0
-    uintp, vintp = vvm.get3DWind_intp(dataDir,case,tp,utp,vtp,tt)
+    uintp, vintp, wintp = vvm.get3DWind_intp(dataDir,case,tp,utp,vtp,tt)
+
+    #extended w3D
+    nz,ny,nx=w3D.shape
+    w_ext=np.zeros((nz+1,ny,nx))
+    w_ext[0,:,:]=np.nan
+    w_ext[1:,:,:]=w3D.copy()
+    topo=tp.copy()
+    topo[topo<1.0]=1.0
+    idx_topo=topo.astype(int)
+
+    for k in range(idx_topo.max()+1):
+      w_ext[k,:,:]=np.where(idx_topo>=k,np.nan,w_ext[k,:,:])
+
+    #w_intp=np.zeros((nz,ny,nx))
+    #for k in range(nz):
+    #  w_intp[k,:,:]=np.nanmean(w_ext[k:k+2,:,:],axis=0)
 
     nx = 15
     nz = 10
 
     xx=621
-    '''
+    
     #for XZ check
     yy=842
     topo = tp[yy,xx:xx+nx]
     utopo = utp[yy,xx:xx+nx]
     u = u3D[:nz,yy,xx-1:xx+nx] 
-    w = w3D[:nz+1,yy,xx:xx+nx]
+    w = w_ext[:nz+1,yy,xx:xx+nx]
+
     #theta = qv3D[:nz,yy,xx:xx+nx]
-    theta = uintp[:nz,yy,xx:xx+nx]
-    '''
-    #for YZ check
+    #theta = uintp[:nz,yy,xx:xx+nx]
+    theta = wintp[:nz,yy,xx:xx+nx]
     
+    #for YZ check
+    '''
     yy=630
     k_offset=6
     topo = tp[yy:yy+nx,xx]-k_offset
@@ -422,7 +440,7 @@ if __name__=='__main__':
     w = w3D[k_offset:k_offset+nz+1,yy:yy+nx,xx]
     #theta = qv3D[:nz,yy,xx:xx+nx]
     theta = vintp[k_offset:k_offset+nz,yy:yy+nx,xx]
-    
+    '''
     plt.close() 
     fig, ax = plot_xz_cgrid_check(
         topo=topo,
@@ -435,8 +453,8 @@ if __name__=='__main__':
         show_theta_values=True,
         show_values_inside_terrain=True,
         #show_utopo_boundary=False,
-        #title=f"C-grid XZ terrain-mask check(x={xx}:{xx+nx},y={yy})",
-        title=f"C-grid YZ terrain-mask check (x={xx},y={yy}:{yy+nx},k_offset={k_offset})",
+        title=f"C-grid XZ terrain-mask check(x={xx}:{xx+nx},y={yy})",
+        #title=f"C-grid YZ terrain-mask check (x={xx},y={yy}:{yy+nx},k_offset={k_offset})",
         figsize=(20, 10)
     )
     

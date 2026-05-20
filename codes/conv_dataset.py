@@ -34,7 +34,7 @@ if __name__ == "__main__":
   #caseList=['tpe_20080715_at006']
 
   #skip calcualted cases
-  convCaseList=[a.split('/')[-1].split('.')[0] for a in glob.glob('../data/ae_data/*conv.9hr.npy')]
+  #convCaseList=[a.split('/')[-1].split('.')[0] for a in glob.glob('../data/ae_data/*conv.9hr.npy')]
   convCaseList=[]
 
   tasks=[]

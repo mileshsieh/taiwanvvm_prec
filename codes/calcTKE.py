@@ -3,7 +3,7 @@ import os,sys,glob
 import time
 import numpy as np
 import pandas as pd
-import vvmDataUtil_v2021 as vvm
+import vvmDataUtil as vvm
 import multiprocessing
 import matplotlib
 from matplotlib import pyplot as plt
@@ -73,49 +73,59 @@ def getXY(yc,xc,angle=20.0,npt=300,ny=1024):
   return line_x,line_y
 
 if __name__ == "__main__":
-  tStart=time.time()
-  caseList=[a.split('/')[-1] for a in glob.glob('/data3/mog/taiwanvvm/tpe*dty')]
-  print(len(caseList))
-  #case=caseList[0]
-  case='tpe20110816dtyP3K'
-  dataDir=vvm.vvmDir+'/%s'%case
-  nt=vvm.getNT(dataDir)
-  (nz,ny,nx),zc=vvm.getDimension('exp',dataDir)
-  topo,lon,lat=vvm.getTOPO(dataDir)
+    tStart=time.time()
+    caseList=[a.split('/')[-1] for a in glob.glob('/data2/VVM/taiwanvvm_lc/taiwanvvm/lc*')]
+    print(len(caseList))
+    # case: 20220625
+    homeDir='/data2/VVM/taiwanvvm_lc'
+    case='lc_20220625'
 
-  print('caseName=%s'%case)
-  print('Dimensions: nx=%d, ny=%d, nz=%d, nt=%d'%(nx,ny,nz,nt))
-  #rt,tke,vke,maxH=calcAll(0,case,dataDir,zc,topo)
+    #get data
+    dataDir=homeDir+'/%s'%case
+    nt=vvm.getNT(dataDir)
+    (nz,ny,nx),zc=vvm.getDimension(case,dataDir)
+    tp,utp,vtp,lon,lat,lon_edge,lat_edge=vvm.getTOPO(dataDir)
   
-  nProc=16
-  #nt=32
-  pool=multiprocessing.Pool(nProc)
-  #print('Calculating %03d timestep using %d processes...'%(len(tmList),multiprocessing.cpu_count()))
-  print('Calculating %d timesteps using %d processes...'%(nt,nProc))
+    print('caseName=%s'%case)
+    print('Dimensions: nx=%d, ny=%d, nz=%d, nt=%d'%(nx,ny,nz,nt))
 
-  #put the arguments into tasks list
-  tasks=[]
-  for tt in range(nt):
-    tasks.append((tt,case,dataDir,zc,topo))
+    #for tt in range(nt):
+    for tt in [72,]:
+        u3D,v3D=vvm.get3DWind_intp(dataDir,case,tp,utp,vtp,tt)
+        w3D=vvm.getData(dataDir,case,'w',tt)
+        tke=calcTKE(u3D,v3D,w3D)
+        #rt,tke,vke,maxH=calcAll(0,case,dataDir,zc,topo)
 
-  results=[pool.apply_async(calcAll,t) for t in tasks]
-  
-  tke_all=np.zeros((nt,ny,nx))
-  vke_all=np.zeros((nt,ny,nx))
-  mHgt_all=np.zeros((nt,ny,nx))
-  for result in results:
-    rt,tke,vke,maxH=result.get()
-    tke_all[rt,:,:]=tke
-    vke_all[rt,:,:]=vke
-    mHgt_all[rt,:,:]=maxH
-    print('Result: timestep %03d is collected'%rt)
+    '''
+    nProc=16
+    #nt=32
+    pool=multiprocessing.Pool(nProc)
+    #print('Calculating %03d timestep using %d processes...'%(len(tmList),multiprocessing.cpu_count()))
+    print('Calculating %d timesteps using %d processes...'%(nt,nProc))
 
-  np.save('./data/%s.tke.npy'%case,tke_all)
-  np.save('./data/%s.vke.npy'%case,vke_all)
-  np.save('./data/%s.maxH.npy'%case,mHgt_all)
+    #put the arguments into tasks list
+    tasks=[]
+    for tt in range(nt):
+        tasks.append((tt,case,dataDir,zc,topo))
+
+    results=[pool.apply_async(calcAll,t) for t in tasks]
   
-  tEnd=time.time()
-  mm,ss=divmod(int(tEnd-tStart),60)
-  hh,mm=divmod(mm,60)
-  print('Calculating %s %d timesteps using %d processes...It costed %d:%02d:%02d'%(case,nt,nProc,hh,mm,ss)) 
+    tke_all=np.zeros((nt,ny,nx))
+    vke_all=np.zeros((nt,ny,nx))
+    mHgt_all=np.zeros((nt,ny,nx))
+    for result in results:
+        rt,tke,vke,maxH=result.get()
+        tke_all[rt,:,:]=tke
+        vke_all[rt,:,:]=vke
+        mHgt_all[rt,:,:]=maxH
+        print('Result: timestep %03d is collected'%rt)
+
+    np.save('./data/%s.tke.npy'%case,tke_all)
+    np.save('./data/%s.vke.npy'%case,vke_all)
+    np.save('./data/%s.maxH.npy'%case,mHgt_all)
   
+    tEnd=time.time()
+    mm,ss=divmod(int(tEnd-tStart),60)
+    hh,mm=divmod(mm,60)
+    print('Calculating %s %d timesteps using %d processes...It costed %d:%02d:%02d'%(case,nt,nProc,hh,mm,ss)) 
+    '''

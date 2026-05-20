@@ -8,6 +8,6 @@
 #SBATCH -e conv_data.err  # error file
 #SBATCH --nodelist=mogamd
 
-python save_wind_preci_data.py
-#python conv_dataset.py
+#python save_wind_preci_data.py
+python conv_dataset.py
 

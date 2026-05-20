@@ -463,11 +463,22 @@ def get3DWind_intp(dataDir,case,tp,utp,vtp,tt):
   vData=np.nanmean([vData,np.roll(vData,1,axis=1)],axis=0)
 
   #fill nan to 0.0 for valleys with only one grid spacing
+  wData=getData(dataDir,case,'w',tt)
+  nz,ny,nx=wData.shape
+  w_ext=np.zeros((nz+1,ny,nx))
+  w_ext[0,:,:]=np.nan
+  w_ext[1:,:,:]=wData.copy()
   for k in range(idx_topo.max()+1):
     uData[k,:,:]=np.where(idx_topo>k,uData[k,:,:],np.where(np.isnan(uData[k,:,:]),0.0,uData[k,:,:]))
     vData[k,:,:]=np.where(idx_topo>k,vData[k,:,:],np.where(np.isnan(vData[k,:,:]),0.0,vData[k,:,:]))
+    w_ext[k,:,:]=np.where(idx_topo>=k,np.nan,w_ext[k,:,:])
 
-  return uData,vData
+  w_intp=np.zeros((nz,ny,nx))
+  for k in range(nz):
+      w_intp[k,:,:]=np.nanmean(w_ext[k:k+2,:,:],axis=0)
+
+  return uData,vData,w_intp
+
 
 
 def getSfcWind_intp(dataDir,case,tp,utp,vtp,tt):
