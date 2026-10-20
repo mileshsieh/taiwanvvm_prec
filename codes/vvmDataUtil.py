@@ -23,6 +23,9 @@ varFn={'qc':'%s.L.Thermodynamic-%06d.nc',
        'u':'%s.L.Dynamic-%06d.nc',
        'v':'%s.L.Dynamic-%06d.nc',
        'w':'%s.L.Dynamic-%06d.nc',
+       'eta':'%s.L.Dynamic-%06d.nc',
+       'xi':'%s.L.Dynamic-%06d.nc',
+       'zeta':'%s.L.Dynamic-%06d.nc',
        'tr01':'%s.L.Tracer-%06d.nc',
        'tr02':'%s.L.Tracer-%06d.nc',
        'tr03':'%s.L.Tracer-%06d.nc',
@@ -416,18 +419,16 @@ def calcCloudAndLWPonTime(case,tt,topo,zc):
 def getFort98Info(dataDir,case,var):
   #get rho
   fname='%s/fort.98'%dataDir
-  #fname='./tpe20060718cln_fort.98'
-  #fname='./CWB/fort.98'
-  df_k=pd.read_csv(fname,skiprows=262,sep='\s+',nrows=70,
+  if var in ['RHO','THBAR','PBAR','PIBAR','QVBAR']:
+    df_k=pd.read_csv(fname,skiprows=263,sep='\s+',nrows=70,
                    names=['K', 'RHO','THBAR','PBAR','PIBAR','QVBAR'])
-  rho=df_k[var].values
+    rho=df_k[var].values
+  elif var in ['ZZ','ZT','FNZ','FNT']:
+    df_k=pd.read_csv(fname,skiprows=188,sep='\s+',nrows=71,
+                   names=['K','ZZ','ZT','FNZ','FNT'])
+    rho=df_k[var].values
   #print(rho.shape)
   return rho
-
-def calcTKE(u,v,w):
-
-  tke=0.5*(u*u+v*v+w*w)
-  return tke
 
 def calcPseAbd(lwp):
   tau=0.19*np.power(lwp,5.0/6.0)*np.power(50.0,1.0/3.0)
@@ -611,7 +612,7 @@ def setSprecColorbar(thd):
 
 
 if __name__ == "__main__":
-  case='tpe20050723cln' if not "-caseName" in sys.argv else sys.argv[sys.argv.index("-caseName")+1]
+  case='tpe_20060826_at012' if not "-caseName" in sys.argv else sys.argv[sys.argv.index("-caseName")+1]
   dataDir=vvmDir+'/%s'%case
 
   #make sure case sub-directory in the postprocesses 
@@ -622,7 +623,7 @@ if __name__ == "__main__":
 
   tStart=time.time()
   nt=getNT(dataDir)
-  (nz,ny,nx),zc=getDimension('exp',dataDir)
+  (nz,ny,nx),zc=getDimension(case,dataDir)
   topo,utopo,vtopo,lon,lat,lon_edge,lat_edge=getTOPO(dataDir)
 
   print('caseName=%s'%case)
@@ -653,7 +654,7 @@ if __name__ == "__main__":
     #PBLH=calcPBLHonTime(case,tt,topo,zc)
     #print('tt=%03d t:'%tt,PBLH.shape,PBLH.max(),PBLH.min())
     #np.save('%s/%s.PBLH.%03d.npy'%(path,case,tt),PBLH)
-    u=getData(dataDir,'exp','u',tt)
+    u=getData(dataDir,case,'u',tt)
     '''
     sprec=getData(dataDir,'exp','sprec',tt)
     np.save('%s/%s.sprec.%03d.npy'%(path,case,tt),sprec*3600)

@@ -1,122 +1,834 @@
-convolve case: tpe_20080925_at016
-convolve case: sw_20070820_sw017
-convolve case: sw_20100727_sw019
-convolve case: tpe_20140714_at010
-convolve case: sw_20100808_at019
-convolve case: sw_20150825_at025
-convolve case: tpe_20060923_at013
-convolve case: sw_20160902_sw008_n6uvtq
-convolve case: sw_20120606_at022
-convolve case: tpe_20120819_at004
-convolve case: tpe_20150618_at035
-convolve case: tpe_20130807_at009
-convolve case: sw_20130829_sw023
-convolve case: tpe_20140803_at034
-convolve case: sw_20100912_at002
-convolve case: tpe_20140802_at023
-convolve case: tpe_20070907_at015
-convolve case: sw_20160928_sw027
-convolve case: sw_20110829_sw020
-convolve case: tpe_20090827_at007
-convolve case: sw_20150727_at024
-convolve case: sw_20100717_at017
-convolve case: sw_20030607_sw014
-convolve case: tpe_20170602_sw003
-convolve case: sw_20100722_at018
-convolve case: sw_20110902_at033
-convolve case: sw_20170731_sw009_n6uvtq
-convolve case: tpe_20060830_at031
-convolve case: sw_20180615_at026
-convolve case: sw_20060601_sw032
-convolve case: lc_20220627
-convolve case: lc_20220623
-convolve case: sw_20130723_at005
-convolve case: sw_20070709_at014
-convolve case: tpe_20130705_at008
-convolve case: tpe_20180828_sw004
-convolve case: sw_20180619_sw030
-convolve case: sw_20080614_sw018
-convolve case: sw_20160712_sw007_n6uvtq
-convolve case: tpe_20060826_at012
-convolve case: sw_20160612_sw025
-convolve case: sw_20180620_sw010_n6uvtq
-convolve case: sw_20110912_at021
-convolve case: tpe_20180906_at030
-convolve case: sw_20080715_at006
-convolve case: tpe_20180620_sw010
-convolve case: lc_20220626
-convolve case: sw_20040522_at011
-convolve case: tpe_20110702_at003
-convolve case: sw_20180719_at028
-convolve case: sw_20170730_sw028
-convolve case: sw_20180727_at029
-convolve case: sw_20100824_at020
-convolve case: sw_20170801_sw029
-convolve case: tpe_20180616_at027
-convolve case: sw_20100802_at001
-convolve case: sw_20110807_at032
-convolve case: tpe_20150727_at024
-convolve case: tpe_20100717_at017
-convolve case: sw_20090827_at007
-convolve case: sw_20120620_sw022
-convolve case: sw_20070907_at015
-convolve case: sw_20150829_sw024
-convolve case: tpe_20110902_at033
-convolve case: tpe_20100722_at018
-convolve case: lc_20220628
-convolve case: tpe_20180615_at026
-convolve case: tpe_20160610_sw002
-convolve case: sw_20080616_sw034
-convolve case: lc_20220624
-convolve case: tpe_20190815_sw005
-convolve case: sw_20060830_at031
-convolve case: sw_20010520_sw011
-convolve case: tpe_20070709_at014
-convolve case: sw_20120610_sw021
-convolve case: sw_20130705_at008
-convolve case: tpe_20130723_at005
-convolve case: sw_20170602_sw003_n6uvtq
-convolve case: sw_20060530_sw031
-convolve case: sw_20130626_sw035
-convolve case: sw_20080925_at016
-convolve case: sw_20020805_sw013
-convolve case: sw_20160610_sw002_n6uvtq
-convolve case: tpe_20160712_sw007
-convolve case: tpe_20150825_at025
-convolve case: tpe_20100808_at019
-convolve case: sw_20140714_at010
-convolve case: tpe_20100912_at002
-convolve case: sw_20140803_at034
-convolve case: sw_20150618_at035
-convolve case: sw_20120819_at004
-convolve case: sw_20130807_at009
-convolve case: tpe_20120606_at022
-convolve case: sw_20060715_sw016
-convolve case: tpe_20140810_sw001
-convolve case: sw_20060923_at013
-convolve case: sw_20060708_sw015
-convolve case: sw_20070819_sw033
-convolve case: sw_20160710_sw026
-convolve case: sw_20140802_at023
-convolve case: tpe_20150828_sw006
-convolve case: sw_20190815_sw005_n6uvtq
-convolve case: tpe_20180719_at028
-convolve case: sw_20110702_at003
-convolve case: sw_20010623_sw012
-convolve case: tpe_20110807_at032
-convolve case: tpe_20100802_at001
-convolve case: sw_20180616_at027
-convolve case: sw_20180828_sw004_n6uvtq
-convolve case: tpe_20100824_at020
-convolve case: sw_20140810_sw001_n6uvtq
-convolve case: tpe_20180727_at029
-convolve case: sw_20150828_sw006_n6uvtq
-convolve case: sw_20060826_at012
-convolve case: lc_20220625
-convolve case: tpe_20080715_at006
-convolve case: tpe_20160902_sw008
-convolve case: sw_20180906_at030
-convolve case: tpe_20110912_at021
-convolve case: tpe_20170731_sw009
-Calculating using 32 processes...
-Calculating 120 cases using 32 processes...It costed 2881.802506 sec
+caseName=tpe_20110618_LCD0506
+tpe_20130703_LCD0621 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 857.643371 sec
+tpe_20140730_LCD0682 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 768.073343 sec
+tpe_20180926_LCD0926 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 598.035185 sec
+tpe_20110907_LCD0538 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 531.691382 sec
+tpe_20200731_LCD0980 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 572.933823 sec
+tpe_20110909_LCD0540 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 508.546033 sec
+tpe_20190605_LCD0934 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 529.478097 sec
+tpe_20140924_LCD0702 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 503.785390 sec
+tpe_20121013_LCD0593 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 681.886023 sec
+tpe_20200917_LCD0999 122
+tpe_20200721_LCD0974 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 817.824507 sec
+tpe_20130716_LCD0626 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 605.996016 sec
+tpe_20200807_LCD0983 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 351.050074 sec
+tpe_20160626_LCD0760 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 489.611869 sec
+tpe_20120915_LCD0584 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 372.836759 sec
+tpe_20110725_LCD0513 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 464.988380 sec
+tpe_20110618_LCD0506 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 436.068262 sec
+tpe_20130825_LCD0645 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 482.412627 sec
+tpe_20200730_LCD0979 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1951.481995 sec
+tpe_20050725_LCD0198 0
+tpe_20101011_LCD0496 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 2008.169106 sec
+tpe_20050726_LCD0199 0
+tpe_20110816_LCD0526 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1976.208773 sec
+tpe_20110919_LCD0543 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1924.438599 sec
+tpe_20170805_LCD0845 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 2027.267087 sec
+tpe_20120916_LCD0585 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1948.448686 sec
+tpe_20200903_LCD0990 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1930.732849 sec
+tpe_20050714_LCD0194 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1845.916521 sec
+tpe_20170720_LCD0839 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1955.086320 sec
+tpe_20180804_LCD0910 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1700.159064 sec
+tpe_20130530_LCD0609 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1672.371446 sec
+tpe_20200909_LCD0995 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 2015.553427 sec
+tpe_20120904_LCD0574 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 2173.415324 sec
+tpe_20070801_LCD0326 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1969.328234 sec
+tpe_20200722_LCD0975 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 2073.093696 sec
+tpe_20060828_LCD0277 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 2081.096312 sec
+tpe_20110908_LCD0539 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1706.674072 sec
+tpe_20060623_LCD0253 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1841.533111 sec
+tpe_20100630_LCD0461 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1919.223822 sec
+tpe_20190804_LCD0943 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 2090.334394 sec
+tpe_20140824_LCD0685 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1678.253494 sec
+tpe_20110823_LCD0533 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1894.894077 sec
+tpe_20160625_LCD0759 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 2296.939651 sec
+tpe_20090730_LCD0415 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1978.655049 sec
+tpe_20200611_LCD0968 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 2280.097791 sec
+tpe_20200819_LCD0988 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1938.862358 sec
+tpe_20050608_LCD0183 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 2042.523892 sec
+tpe_20190911_LCD0949 0
+tpe_20130801_LCD0634 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1870.496659 sec
+tpe_20150926_LCD0737 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 2130.246235 sec
+tpe_20110731_LCD0517 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1935.289019 sec
+tpe_20120929_LCD0592 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1768.794792 sec
+tpe_20180919_LCD0922 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1723.507801 sec
+tpe_20110621_LCD0507 42
+tpe_20170817_LCD0857 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1660.254213 sec
+tpe_20170523_LCD0807 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1629.633376 sec
+tpe_20110704_LCD0508 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1608.037092 sec
+tpe_20050704_LCD0189 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1608.402181 sec
+tpe_20190922_LCD0953 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1622.518343 sec
+tpe_20070724_LCD0318 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1640.304116 sec
+tpe_20110814_LCD0524 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1691.494511 sec
+tpe_20120912_LCD0582 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1597.860746 sec
+tpe_20190617_LCD0935 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1591.293948 sec
+tpe_20170709_LCD0828 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1518.750601 sec
+tpe_20141012_LCD0710 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1634.840224 sec
+tpe_20200929_LCD1003 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1780.530515 sec
+tpe_20110723_LCD0511 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1690.742456 sec
+tpe_20130906_LCD0648 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1655.413884 sec
+tpe_20170701_LCD0822 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1874.046901 sec
+tpe_20050727_LCD0200 0
+tpe_20170719_LCD0838 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1767.578351 sec
+tpe_20151003_LCD0739 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1672.028915 sec
+tpe_20200805_LCD0981 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1720.100955 sec
+tpe_20070727_LCD0321 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1949.227123 sec
+tpe_20130802_LCD0635 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1857.877074 sec
+tpe_20140714_LCD0673 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1848.405355 sec
+tpe_20090827_LCD0432 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1990.280711 sec
+tpe_20200723_LCD0976 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1970.635927 sec
+tpe_20160722_LCD0767 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 2017.636417 sec
+tpe_20121025_LCD0603 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1906.754639 sec
+tpe_20200930_LCD1004 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1834.171023 sec
+tpe_20130729_LCD0631 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1701.754373 sec
+tpe_20200612_LCD0969 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1753.613675 sec
+tpe_20070708_LCD0313 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1711.733225 sec
+tpe_20140831_LCD0692 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1764.986981 sec
+tpe_20080817_LCD0366 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1309.890667 sec
+tpe_20121015_LCD0595 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1301.528806 sec
+tpe_20131013_LCD0661 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1232.033586 sec
+tpe_20190805_LCD0944 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1192.496654 sec
+tpe_20140910_LCD0697 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1250.732439 sec
+tpe_20200725_LCD0977 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1275.349361 sec
+tpe_20170824_LCD0862 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1297.166970 sec
+tpe_20081003_LCD0380 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1234.635486 sec
+tpe_20070723_LCD0317 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1272.901607 sec
+tpe_20200704_LCD0972 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1179.839520 sec
+tpe_20050711_LCD0193 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1356.582727 sec
+tpe_20110928_LCD0546 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1259.743560 sec
+tpe_20110727_LCD0515 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1268.286520 sec
+tpe_20170818_LCD0858 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1248.160599 sec
+tpe_20130730_LCD0632 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1210.356737 sec
+tpe_20190917_LCD0951 0
+tpe_20151001_LCD0738 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1281.303228 sec
+tpe_20070620_LCD0305 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1266.149930 sec
+tpe_20200927_LCD1002 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1336.472610 sec
+tpe_20170813_LCD0853 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1222.203906 sec
+tpe_20170511_LCD0804 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1104.305349 sec
+tpe_20200501_LCD0965 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1163.989388 sec
+tpe_20170803_LCD0843 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1169.596951 sec
+tpe_20200907_LCD0993 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1190.566437 sec
+tpe_20141010_LCD0708 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1216.610157 sec
+tpe_20180921_LCD0924 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1321.763420 sec
+tpe_20130630_LCD0619 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1193.219005 sec
+tpe_20180712_LCD0902 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1173.310907 sec
+tpe_20140915_LCD0699 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1155.760585 sec
+tpe_20060625_LCD0255 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1137.872586 sec
+tpe_20120601_LCD0556 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1155.320175 sec
+tpe_20160526_LCD0751 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1246.436095 sec
+tpe_20140717_LCD0676 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1312.629925 sec
+tpe_20200720_LCD0973 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1281.038954 sec
+tpe_20200914_LCD0996 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1337.629153 sec
+tpe_20070703_LCD0311 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1433.440912 sec
+tpe_20140727_LCD0679 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1198.187304 sec
+tpe_20130531_LCD0610 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1091.212530 sec
+tpe_20140715_LCD0674 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1162.594325 sec
+tpe_20170924_LCD0876 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1211.434184 sec
+tpe_20180726_LCD0907 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1303.180660 sec
+tpe_20140830_LCD0691 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1313.308181 sec
+tpe_20200902_LCD0989 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1374.232500 sec
+tpe_20170827_LCD0864 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 996.491981 sec
+tpe_20140906_LCD0696 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 990.197026 sec
+tpe_20200905_LCD0991 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1118.489460 sec
+tpe_20150802_LCD0726 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1167.372684 sec
+tpe_20160728_LCD0772 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1062.913131 sec
+tpe_20070621_LCD0306 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1074.792218 sec
+tpe_20190512_LCD0932 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1059.407109 sec
+tpe_20190828_LCD0946 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1087.798260 sec
+tpe_20180912_LCD0918 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1067.230101 sec
+tpe_20190923_LCD0954 0
+tpe_20170609_LCD0813 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1019.442669 sec
+tpe_20130811_LCD0643 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1086.091805 sec
+tpe_20140729_LCD0681 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1203.294067 sec
+tpe_20090921_LCD0443 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1319.213355 sec
+tpe_20170610_LCD0814 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1225.999379 sec
+tpe_20130701_LCD0620 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1040.570103 sec
+tpe_20140716_LCD0675 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 981.242813 sec
+tpe_20121017_LCD0597 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 992.750811 sec
+tpe_20090818_LCD0423 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 968.805097 sec
+tpe_20200906_LCD0992 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 971.029344 sec
+tpe_20060520_LCD0247 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 984.424443 sec
+tpe_20130618_LCD0617 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 976.739842 sec
+tpe_20140905_LCD0695 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 966.978812 sec
+tpe_20110811_LCD0521 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 965.658392 sec
+tpe_20160824_LCD0783 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 977.237241 sec
+tpe_20050701_LCD0186 1
+tpe_20110910_LCD0541 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 985.473346 sec
+tpe_20150801_LCD0725 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 973.917247 sec
+tpe_20200513_LCD0966 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 919.952769 sec
+tpe_20160730_LCD0773 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 937.505685 sec
+tpe_20050929_LCD0232 0
+tpe_20120604_LCD0557 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 940.974707 sec
+tpe_20170923_LCD0875 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 972.988521 sec
+tpe_20120708_LCD0565 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 946.308437 sec
+tpe_20200729_LCD0978 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 946.060595 sec
+tpe_20141011_LCD0709 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 998.319202 sec
+tpe_20110824_LCD0534 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 959.643770 sec
+tpe_20160724_LCD0769 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 977.081833 sec
+tpe_20100731_LCD0470 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 979.322628 sec
+tpe_20111013_LCD0552 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 994.565542 sec
+tpe_20160621_LCD0755 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 973.446063 sec
+tpe_20170904_LCD0866 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 921.002201 sec
+tpe_20200813_LCD0986 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 926.835213 sec
+tpe_20170825_LCD0863 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 917.470579 sec
+tpe_20200514_LCD0967 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 938.120906 sec
+tpe_20121014_LCD0594 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 947.414286 sec
+tpe_20140828_LCD0689 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 897.190721 sec
+tpe_20131012_LCD0660 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 888.378796 sec
+tpe_20120707_LCD0564 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 933.458838 sec
+tpe_20160919_LCD0785 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 922.880737 sec
+tpe_20130529_LCD0608 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 943.597944 sec
+tpe_20130617_LCD0616 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 916.271030 sec
+tpe_20110615_LCD0504 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1002.513005 sec
+tpe_20050702_LCD0187 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 943.639308 sec
+tpe_20160823_LCD0782 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 966.954721 sec
+tpe_20170718_LCD0837 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 966.130255 sec
+tpe_20090817_LCD0422 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 959.219030 sec
+tpe_20190916_LCD0950 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 964.449853 sec
+tpe_20170819_LCD0859 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 955.745308 sec
+tpe_20130731_LCD0633 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 968.647136 sec
+tpe_20060702_LCD0262 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 973.589576 sec
+tpe_20160803_LCD0774 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 985.800196 sec
+tpe_20110726_LCD0514 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 970.841340 sec
+tpe_20190827_LCD0945 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 965.429486 sec
+tpe_20070722_LCD0316 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 986.608198 sec
+tpe_20200808_LCD0984 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 994.913245 sec
+tpe_20050710_LCD0192 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1000.415488 sec
+tpe_20050724_LCD0197 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 990.256515 sec
+tpe_20090707_LCD0409 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1027.219301 sec
+tpe_20160805_LCD0776 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 996.282723 sec
+tpe_20200628_LCD0971 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 974.774702 sec
+tpe_20180913_LCD0919 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1055.222895 sec
+tpe_20110728_LCD0516 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1059.110044 sec
+tpe_20200924_LCD1001 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1047.919121 sec
+tpe_20110818_LCD0528 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1048.026928 sec
+tpe_20190829_LCD0947 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1047.203254 sec
+tpe_20110927_LCD0545 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1000.430769 sec
+tpe_20121016_LCD0596 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1062.735648 sec
+tpe_20110803_LCD0520 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1033.788735 sec
+tpe_20121026_LCD0604 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1182.442321 sec
+tpe_20170823_LCD0861 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1096.792783 sec
+tpe_20060814_LCD0274 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1044.269001 sec
+tpe_20140918_LCD0701 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1010.567469 sec
+tpe_20200812_LCD0985 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 983.505314 sec
+tpe_20150731_LCD0724 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 936.818534 sec
+tpe_20170503_LCD0800 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 991.611937 sec
+tpe_20170820_LCD0860 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1042.157478 sec
+tpe_20170628_LCD0819 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1181.259615 sec
+tpe_20130804_LCD0636 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1183.086930 sec
+tpe_20200915_LCD0997 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1026.793164 sec
+tpe_20200923_LCD1000 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 999.325192 sec
+tpe_20070831_LCD0336 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1069.167341 sec
+tpe_20170910_LCD0868 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1012.547945 sec
+tpe_20120729_LCD0567 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 966.707765 sec
+tpe_20050723_LCD0196 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 968.038807 sec
+tpe_20200627_LCD0970 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 963.161179 sec
+tpe_20110813_LCD0523 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 952.573189 sec
+tpe_20110614_LCD0503 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 983.930876 sec
+tpe_20070805_LCD0330 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 957.997058 sec
+tpe_20170916_LCD0869 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 976.945458 sec
+tpe_20141004_LCD0707 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1025.069868 sec
+tpe_20200908_LCD0994 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 991.204348 sec
+tpe_20190901_LCD0948 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 924.576938 sec
+tpe_20050715_LCD0195 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 872.625599 sec
+tpe_20170804_LCD0844 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 849.524019 sec
+tpe_20110817_LCD0527 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 860.200184 sec
+tpe_20131030_LCD0667 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 859.732191 sec
+tpe_20141024_LCD0715 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 872.455434 sec
+tpe_20190919_LCD0952 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1022.667200 sec
+tpe_20170711_LCD0830 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 985.660519 sec
+tpe_20170723_LCD0840 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 987.947603 sec
+tpe_20160624_LCD0758 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 980.712594 sec
+tpe_20150903_LCD0729 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1010.834937 sec
+tpe_20180715_LCD0905 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1005.433722 sec
+tpe_20080919_LCD0376 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 978.227320 sec
+tpe_20200916_LCD0998 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 964.643993 sec
+tpe_20120820_LCD0569 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1016.618796 sec
+tpe_20070507_LCD0297 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1039.126391 sec
+tpe_20130807_LCD0639 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1045.347664 sec
+tpe_20170623_LCD0816 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 985.597634 sec
+tpe_20180927_LCD0927 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 972.593267 sec
+tpe_20050731_LCD0204 0
+tpe_20070728_LCD0322 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 944.142654 sec
+tpe_20150621_LCD0723 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1184.314752 sec
+tpe_20130809_LCD0641 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1579.099880 sec
+tpe_20170712_LCD0831 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1439.158880 sec
+tpe_20070731_LCD0325 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1238.462837 sec
+tpe_20170724_LCD0841 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1084.988240 sec
+tpe_20200806_LCD0982 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1448.330095 sec
+tpe_20130621_LCD0618 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1497.835631 sec
+tpe_20151004_LCD0740 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1471.968479 sec
+tpe_20180709_LCD0901 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1485.962949 sec
+tpe_20190524_LCD0933 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1487.792880 sec
+tpe_20130715_LCD0625 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1466.234840 sec
+tpe_20160726_LCD0771 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1382.928155 sec
+tpe_20130826_LCD0646 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1438.046035 sec
+tpe_20080620_LCD0352 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1408.874347 sec
+tpe_20130812_LCD0644 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1477.103928 sec
+tpe_20170714_LCD0833 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1481.065953 sec
+tpe_20130704_LCD0622 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1450.934119 sec
+tpe_20180718_LCD0906 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1364.819828 sec
+tpe_20200815_LCD0987 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1485.527601 sec
+tpe_20131024_LCD0663 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1357.053001 sec
+tpe_20070726_LCD0320 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1382.172771 sec
+tpe_20151029_LCD0745 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1367.241162 sec
+tpe_20131023_LCD0662 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1481.760118 sec
+tpe_20120819_LCD0568 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1461.768081 sec
+tpe_20170725_LCD0842 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1486.937027 sec
+tpe_20130918_LCD0658 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1440.293146 sec
+tpe_20120913_LCD0583 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1496.960108 sec
+tpe_20160725_LCD0770 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1526.772731 sec
+tpe_20170713_LCD0832 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1463.062742 sec
+tpe_20120719_LCD0566 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1376.476704 sec
+tpe_20130910_LCD0652 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1453.722239 sec
+tpe_20090820_LCD0425 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1404.798015 sec
+tpe_20170816_LCD0856 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1421.863226 sec
+tpe_20170522_LCD0806 145
+Calculating 145 timesteps using 32 processes...
+Calculating 145 timesteps using 32 processes...It costed 1356.861757 sec

@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-#SBATCH -J conv_data    # Job name
+#SBATCH -J save_data    # Job name
 #SBATCH -p all          # job partition
 #SBATCH -N 1            # Run all processes on a single node	
 #SBATCH -c 1            # cores per MPI rank
@@ -10,4 +10,4 @@
 
 #python save_wind_preci_data.py
 python conv_dataset.py
-
+#python split_8day_save_wind_preci_data.py

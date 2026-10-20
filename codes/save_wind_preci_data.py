@@ -15,20 +15,28 @@ def get_SFC_Field(tt,case,dataDir,topo,utopo,vtopo):
 
 if __name__ == "__main__":
   nProc=32
-  case='tpe_20100802_at001'
-  dataDir='/data2/VVM/taiwanvvm_summer/'+case
-  print('caseName=%s'%case)
+  #case='tpe_20100802_at001'
+  #dataDir='/data2/VVM/taiwanvvm_summer/'+case
+  #case='tpe_20110618_LCD0506'
+  #dataDir='/data3/VVM/taiwanvvm_summer_LCD/'+case
+  #print('caseName=%s'%case)
+  homeDir='/data3/VVM/taiwanvvm_summer_LCD'
 
-  nt=vvm.getNT(dataDir)
-  (nz,ny,nx),zc=vvm.getDimension(case,dataDir)
-  topo,utopo,vtopo,lon,lat,lon_edge,lat_edge=vvm.getTOPO(dataDir)
-  np.save('../data/zc.npy',zc.filled(0.0))
+  zc=np.load('../data/zc.npy')
+  lon=np.load('../data/lon.npy')
+  lat=np.load('../data/lat.npy')
+  topo=np.load('../data/topo.npy')
+  utopo=np.load('../data/utopo.npy')
+  vtopo=np.load('../data/vtopo.npy')
+  nz=zc.shape[0]
+  (ny,nx)=topo.shape
 
   pool=multiprocessing.Pool(nProc)
   #for all the runs
   #caseList=[a.split('/')[-1] for a in glob.glob('/data2/VVM/taiwanvvm_summer/*_20*')]
   #caseList=[a.split('/')[-1] for a in glob.glob('/data3/VVM/taiwanvvm_summer_ats/*_20*')]
-  caseList=[a.split('/')[-1] for a in glob.glob('/data2/VVM/taiwanvvm_lc/*_20*')]
+  #caseList=[a.split('/')[-1] for a in glob.glob('/data2/VVM/taiwanvvm_lc/*_20*')]
+  caseList=[a.split('/')[-1] for a in glob.glob('/data3/VVM/taiwanvvm_summer_LCD/*_20*')]
   #caseList=['tpe_20080715_at006']
   sfcList=[a.split('/')[-1].split('.')[0] for a in glob.glob('../data/*.sfc.npy')]
   #sfcList=[]
@@ -39,8 +47,9 @@ if __name__ == "__main__":
     else:
       #dataDir='/data2/VVM/taiwanvvm_summer/'+c
       #dataDir='/data3/VVM/taiwanvvm_summer_ats/'+c
-      dataDir='/data2/VVM/taiwanvvm_lc/'+c
-      nt=vvm.getNT(dataDir)
+      #dataDir='/data2/VVM/taiwanvvm_lc/'+c
+      dataDir='{homeDir}/{c}'
+      nt=len(glob.glob(f'{dataDir}/archive/*Thermody*.nc'))
       print(c,nt)
       if nt<145:
         continue
